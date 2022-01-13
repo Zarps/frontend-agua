@@ -1,0 +1,105 @@
+body {
+background-color: #82ccdd;
+}
+nav {
+    background-color: #38ada9;
+    overflow: hidden;
+    padding: 1em;
+    border-bottom: 3px solid rgb(230, 227, 198);
+}
+
+nav    a {
+        color: rgb(230, 227, 198);
+}
+nav    a:hover{
+        color: #0c2461;
+}
+
+nav .navWide {
+    display: none;
+    margin: 0 auto;
+}
+
+nav .navWide .wideDiv {
+    text-align: center;
+    font-size: 1.50rem;
+}
+
+nav .navWide .wideDiv a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 4em;
+}
+nav    .navNarrow i {
+    float: left;
+    cursor: pointer;
+    color: #000;
+}
+
+nav .navNarrow .narrowLinks a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    clear: left;
+    padding: 0.5em 0;
+}
+
+.hidden {
+  display: none;
+}
+@media (min-width: 480px) {
+
+    nav .navWide {
+        display: block;
+    }
+
+    nav .navNarrow {
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .arrumar{
+        padding: 30px;
+    }
+    
+    .altlarg{
+        width: 270px;
+        height: 230px;
+        border-radius: 0;
+    }
+    .center {
+        text-align: center;
+    }
+
+    .altlargimg{
+    width: 200;
+    height: 200;
+    padding: 19px;
+}
+    .imagem {
+
+        width: 250px;
+        height: 250px;
+        padding: 8px;
+  }
+  .texto {
+        background-color: rgba(0,0,0,0.5);
+        color:#fff;
+        text-align: center;
+        top: 110px;
+        width: 258px;
+        line-height: 30px;
+        height: 30px;
+  }
+  .alinhamento{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
